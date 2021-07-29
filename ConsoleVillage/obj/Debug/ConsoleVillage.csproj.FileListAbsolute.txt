@@ -5,3 +5,10 @@ C:\Users\tsimcox\source\repos\ConsoleVillage\ConsoleVillage\bin\Debug\ConsoleVil
 C:\Users\tsimcox\source\repos\ConsoleVillage\ConsoleVillage\bin\Debug\ConsoleVillage.pdb
 C:\Users\tsimcox\source\repos\ConsoleVillage\ConsoleVillage\obj\Debug\ConsoleVillage.exe
 C:\Users\tsimcox\source\repos\ConsoleVillage\ConsoleVillage\obj\Debug\ConsoleVillage.pdb
+C:\Users\tobyr\source\repos\ConsoleVillage\ConsoleVillage\bin\Debug\ConsoleVillage.exe.config
+C:\Users\tobyr\source\repos\ConsoleVillage\ConsoleVillage\bin\Debug\ConsoleVillage.exe
+C:\Users\tobyr\source\repos\ConsoleVillage\ConsoleVillage\bin\Debug\ConsoleVillage.pdb
+C:\Users\tobyr\source\repos\ConsoleVillage\ConsoleVillage\obj\Debug\ConsoleVillage.csprojAssemblyReference.cache
+C:\Users\tobyr\source\repos\ConsoleVillage\ConsoleVillage\obj\Debug\ConsoleVillage.csproj.CoreCompileInputs.cache
+C:\Users\tobyr\source\repos\ConsoleVillage\ConsoleVillage\obj\Debug\ConsoleVillage.exe
+C:\Users\tobyr\source\repos\ConsoleVillage\ConsoleVillage\obj\Debug\ConsoleVillage.pdb

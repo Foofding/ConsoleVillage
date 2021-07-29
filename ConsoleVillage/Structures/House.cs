@@ -3,29 +3,52 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConsoleVillage.WorldGrid;
+using ConsoleVillage;
 
 namespace ConsoleVillage.Structures
 {
-    class House
+    public class House
     {
+        private int x;
+        private int y;
+
+        public House(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        public int X { get; set; }
+
+        public int getX()
+        {
+            return x;
+        }
+
+        public int getY()
+        {
+            return y;
+        }
+
+        public void DrawHouse(WorldGrid worldgrid, int x, int y)
+        {
+
+            //worldGrid[worldGrid.GetCell(x - 1, y - 1)] = '\x0219';
+            //worldGrid[GetCell(x, y - 1)] = '\x0219';
+            //worldGrid[GetCell(x + 1, y - 1)] = '\x0219';
+            //worldGrid[GetCell(x - 1, y)] = '\x0219';
+            //worldGrid[GetCell(x, y)] = '\x0219';
+            //worldGrid[GetCell(x + 1, y)] = '\x0219';
+            //worldGrid[GetCell(x - 1, y + 1)] = '\x0219';
+            //worldGrid[GetCell(x, y + 1)] = '\x0219';
+            //worldGrid[GetCell(x + 1, y + 1)] = '\x0219';
+        }
+
 
     }
 
-    public void DrawHouse(char[] worldGrid, int x, int y)
-    {
-        //Origin point is not left. House is 3x3 111101 (1 = wall, 0 = door)
-        (WorldGrid.GetCell(x - 1, y - 1)
-        WorldGrid.GetCell(x + 1,y)
-        WorldGrid.GetCell(x+2,y)
-        WorldGrid.GetCell(x, y)
-        WorldGrid.GetCell(x, y)
-        WorldGrid.GetCell(x, y)
+   
 
 
-
-        worldGrid[] = 219
-
-    }
 
 }

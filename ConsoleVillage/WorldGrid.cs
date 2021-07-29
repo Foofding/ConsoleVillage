@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleVillage.Structures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,36 +11,46 @@ namespace ConsoleVillage
     {
         private int width;
         private int height;
-        public char[] cells;
-        private char[] cells2;
+        private char[] Cells2;
+
+        public char[] Cells;       
+        public List<House> Houses;
+       
+
+
+        public WorldGrid()
+        {
+
+        }
 
         public WorldGrid(int w, int h)
         {
             width = w;
             height = h;
-            cells = new char[width * height];
-            cells2 = new char[width * height];
-            for (int i = 0; i < cells.Length; i++)
-                cells[i] = '-';
-            for (int i = 0; i < cells2.Length; i++)
-                cells2[i] = '-';
+            Cells = new char[width * height];
+           //Cells2 = new char[width * height];
+            for (int i = 0; i < Cells.Length; i++)
+                Cells[i] = '-';
+           // for (int i = 0; i < Cells2.Length; i++)
+           //     Cells2[i] = '-';
         }
+        
 
-        public void Displaygrid()
+        public void DisplayGrid()
         {
-            for (int i = 0; i < cells.Length; i++)
+            for (int i = 0; i < Cells.Length; i++)
             {
                 if (i % width == 0 && i != 0)
                 {
                     Console.WriteLine("");
                 }
-                //if (cells[i] == '@')
+                //if (Cells[i] == '@')
                 //{
                 //    Console.ForegroundColor = ConsoleColor.Green;
-                //    Console.Write(cells[i]);
+                //    Console.Write(Cells[i]);
                 //    Console.ForegroundColor = ConsoleColor.White;
                 //}
-                 Console.Write(cells[i]);
+                 Console.Write(Cells[i]);
             }
         }
 
@@ -49,7 +60,7 @@ namespace ConsoleVillage
             if (y < 0) y = height - 1;
             if (x >= width) x = 0;
             if (x < 0) x = width - 1;
-            return cells[y * width + x];
+            return Cells[y * width + x];
         }
 
         public int GetNeighbors(int x, int y)
@@ -72,15 +83,9 @@ namespace ConsoleVillage
             //bottom right
             if (GetCell(x + 1, y + 1) != '-') count++;  
            
-            
-            
-            
-
-
             return count;
         }
-
-
+        
 
 
 
